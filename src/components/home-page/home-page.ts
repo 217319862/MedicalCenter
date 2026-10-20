@@ -11,10 +11,14 @@ export class HomePage {
 
   constructor(private router: Router) { }
 
-  showSection(section: string) {
-    this.currentSection = section;
-  }
+  // showSection(section: string) {
+  //   this.currentSection = section;
+  // }
   goToContacts()  {
     this.router.navigate(['/contacts']);
   }
+  // goToSingleContacts()  {
+  //   this.router.navigate(['/single-contact']);}
+    goToNewCContact()  {
+      this.router.navigate(['/new-contact']);}
 }
