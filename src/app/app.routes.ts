@@ -1,14 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Customers } from '../components/customers/customers';  // עדכן את הייבוא בהתאם למיקום הקומפוננטה שלך
+import { HomePage } from '../components/home-page/home-page';
+import { Contacts } from '../components/contacts/contacts';
+import { Contact } from '../components/contact/contact';
 
 export const routes: Routes = [
-  { path: 'contact', component: Customers },
-  { path: 'customers', component: Customers },
+  { path: '', component: HomePage },
+  { path: 'home', component: HomePage },
+  { path: 'contacts', component: Contacts },
+  { path: 'contact', component: Contact },
 ];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+
+
+// import { LoginComponent } from './login.component';
+// import { ProductsComponent } from './products.component';
+
+// export const appRoutes: Routes = [
+//   { path: 'login', component: LoginComponent },
+//   { path: 'products', component: ProductsComponent },
+//   { path: ' ** ', redirectTo: '' }
+// ]

@@ -1,13 +1,13 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { HomePage } from './home-page';
+import { HomePage } from './home-page';  // שים לב לשם הקובץ והכיתה
 
-describe('HomePage', () => {
+describe('HomePage', () => {  // שים לב לשם כאן
   let component: HomePage;
   let fixture: ComponentFixture<HomePage>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HomePage],
+      declarations: [ HomePage ],  // שים לב שהוספת כאן את HomePage
     }).compileComponents();
 
     fixture = TestBed.createComponent(HomePage);
